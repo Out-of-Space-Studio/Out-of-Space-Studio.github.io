@@ -1,3 +1,3 @@
 # CS380B
 
-YZU Web
+YZU Web Project
