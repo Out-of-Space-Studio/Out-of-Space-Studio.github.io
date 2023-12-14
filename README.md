@@ -1,3 +1,3 @@
-# CS380B
+# Mov1e- A Forum for Movieholics
 
-YZU Web Project
+YZU Web Project for Course- CS380B
