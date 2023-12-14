@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html lang="zh-tw">
-
+    
     <head>
-
+        
         <meta charset="utf-8">
         <meta name="viewpoint" content="width-device= width, initial-scale= 1, user-scalable= no">
+        <meta name="author" content="JelyF1shhhhhh">
+        <meta name="copyright" content="Out of Space Studio">
+        <meta 
+            name="title" 
+            content="Mov1e- A Forum for Movieholics"
+        />
+        <meta 
+            name="description" 
+            content="Mov1e is a forum for movieholics communicate movie infos to each others. So try it and have a good experience by watching movies."
+        />
+        <meta property="og:title" content="Mov1e- A Forum for Movieholics">
+        <meta property="og:image" content="">
+        <meta property="og:url" content="">
+        <meta property="description" content="The only thing I know is that I'm weak :D">
+
         <link rel="icon" href="./images/favicon.ico">
-        <title>Mov1e</title>
+        <title>Mov1e- A Forum for Movieholics</title>
+
+        <!-- Style Link -->
+        
+        {% block-style %}
+        {% endblock %}
+
+        <!-- Head Link -->
+        {% block-head %}
+        {% endblock %}
+
     </head>
     <body>
-        
-        <div class="content">
-            <h1>Mov1e Studio &copy;</h1>
-            <p>A fully responsive site designed by <a href="https://github.com/Out-of-Space-Studio">Out of Space Studio &copy;</a></p>
-        </div>
-        <!-- MUSIC -->
+        <!-- No Script -->
+        <noscript> Please Enable JavaScript to Fully Experience This Site :D </noscript>
 
-        <article id="music">
-            <h2>Some Spotify &copy; Playlist for You :D</h2>
-
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2Ex1Osc3c4gopJmlKSjM8j?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <br><br>
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1EVHGWrwldPRtj?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <br><br>
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1EQoqCH7BwIYb7?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-        </article>
-
-
-        <!-- INTRO -->
-        <article>
-            <h2>Mov1e Studio</h2>
-            <h4>- A Forum for Movieholics to Share Their Experiences to People All Over the World !</h4>
-            <p></p>
-        </article>
+        <!-- Body Link -->
+        {% block-body %}
+        {% endblock %}
     </body>
 </html>
