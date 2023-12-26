@@ -34,18 +34,17 @@ class Team{
         var tName= window.prompt("Input the New Name:");
         var now= new Date();
         console.log((now.getTime()- time.getTime())/ 1000+ "s >>> " + role + " Modify " + this.tName + " to " + tName);
-        var elements = document.getElementsByClassName(this.tName);
-        for (var i = 0; i < elements.length; i++) {
-            
-            elements[i].classList.add(tName);
-            elements[i].classList.remove(this.tName);
-        }
         this.tName= tName;
         this.display();
     }
     
-    m_tPoint(){
+    m_tPoint(role= "Admin"){
         
+        var tPoint= null;
+        while(!Number.isInteger(tPoint)){
+            
+            var tPoint= parseInt(window.prompt("Input the New Point"));
+        }
         var now= new Date();
         console.log((now.getTime()- time.getTime())/ 1000+ "s >>> " + role + " Modify " + this.tName + "Point from "+this.tPoint + " to " + this.tPoint);
         this.tPoint= tPoint;
