@@ -49,29 +49,37 @@
     <body>
         
         <!-- HomePage -->
-        <div class="mainBoard">
-            <span class="tBoard teamA">
+        <article class="mainBoard">
+            <div class="wrapper">
+                <div class="HOME">
+                    
+                    <label for="hName">HOME<img src="./pencil.png" onclick="TeamA.m_tName(undefined)"></label>
+                    <p class="hName">Team A</p>
+                    <p class="hPoint">0</p>
+                    <input class="i_Button" type="button" value="+1" onclick="TeamA.addPoint(0, 1)">
+                    <input class="i_Button" type="button" value="+2" onclick="TeamA.addPoint(0, 2)">
+                    <input class="i_Button" type="button" value="+3" onclick="TeamA.addPoint(0, 3)">
+                    <input class="i_Button" type="button" value="-1" onclick="TeamA.minusPoint(undefined, 1)">
+                    <input class="i_Button" type="button" value="-2" onclick="TeamA.minusPoint(undefined, 2)">
+                    <input class="i_Button" type="button" value="-3" onclick="TeamA.minusPoint(undefined, 3)">
+                    
+                </div>
+                <hr class="scoreboard-hr">
+                <div class="AWAY">
+                    
+                    <label for="hName">AWAY<img src="./pencil.png" onclick="TeamB.m_tName(undefined)"></label>
+                    <p class="aName">Team B</p>
+                    <p class="aPoint">0</p>
+                    <input class="i_Button teamB" type="button" value="+1" onclick="TeamB.addPoint(0, 1)">
+                    <input class="i_Button teamB" type="button" value="+2" onclick="TeamB.addPoint(0, 2)">
+                    <input class="i_Button teamB" type="button" value="+3" onclick="TeamB.addPoint(0, 3)">
+                    <input class="i_Button teamB" type="button" value="-1" onclick="TeamB.minusPoint(undefined, 1)">
+                    <input class="i_Button teamB" type="button" value="-2" onclick="TeamB.minusPoint(undefined, 2)">
+                    <input class="i_Button teamB" type="button" value="-3" onclick="TeamB.minusPoint(undefined, 3)">
 
-                <input class="i_Button" type="button" value="+1" onclick="TeamA.addPoint(0, 1)">
-                <input class="i_Button" type="button" value="+2" onclick="TeamA.addPoint(0, 2)">
-                <input class="i_Button" type="button" value="+3" onclick="TeamA.addPoint(0, 3)">
-                <input class="i_Button" type="button" value="-1" onclick="TeamA.minusPoint(undefined, 1)">
-                <input class="i_Button" type="button" value="-2" onclick="TeamA.minusPoint(undefined, 2)">
-                <input class="i_Button" type="button" value="-3" onclick="TeamA.minusPoint(undefined, 3)">
-                
-            </span>
-
-            <span class="tBoard teamB">
-
-                <input class="i_Button" type="button" value="+1" onclick="TeamB.addPoint(0, 1)">
-                <input class="i_Button" type="button" value="+2" onclick="TeamB.addPoint(0, 2)">
-                <input class="i_Button" type="button" value="+3" onclick="TeamB.addPoint(0, 3)">
-                <input class="i_Button" type="button" value="-1" onclick="TeamB.minusPoint(undefined, 1)">
-                <input class="i_Button" type="button" value="-2" onclick="TeamB.minusPoint(undefined, 2)">
-                <input class="i_Button" type="button" value="-3" onclick="TeamB.minusPoint(undefined, 3)">
-
-            </span>
-        </div>
+                </div>
+            </div>
+        </article>
 
         <!-- End -->
         
@@ -105,6 +113,7 @@
                     <div class="text-box">
                         Mail || <a class="mail" href="mailto:tony0940419@outlook.com"> tony0940419@outlook.com </a>
                     </div>
+                    <br>
                     <div class="text-box">
                         Address || <span class="address">Planet Beside Earth, Solar System, Oort Cloud...</span>
                     </div>
