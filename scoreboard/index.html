@@ -20,6 +20,12 @@
         <link rel="stylesheet" href="../src/css/main.css">
         <link rel="stylesheet" href="../src/css/header.css">
         <link rel="stylesheet" href="../src/css/footer.css">
+        
+        <link rel="stylesheet" href="./board.css">
+        <!-- End -->
+
+        <!-- Import JavaScript File(s) -->
+        <script type="text/javascript" src="./score.js"></script>
         <!-- End -->
         
         <!-- nav Bar -->
@@ -30,13 +36,42 @@
         </nav>
         <!-- End -->
         
+        <!-- Script -->
+        <script>
+
+            window.addEventListener("load", (event) => {
+                INIT_time();
+            });
+        </script>
+        <!-- End -->
+
     </head>
     <body>
         
         <!-- HomePage -->
+        <div class="mainBoard">
+            <span class="tBoard teamA">
 
+                <input class="i_Button" type="button" value="+1" onclick="TeamA.addPoint(0, 1)">
+                <input class="i_Button" type="button" value="+2" onclick="TeamA.addPoint(0, 2)">
+                <input class="i_Button" type="button" value="+3" onclick="TeamA.addPoint(0, 3)">
+                <input class="i_Button" type="button" value="-1" onclick="TeamA.minusPoint(undefined, 1)">
+                <input class="i_Button" type="button" value="-2" onclick="TeamA.minusPoint(undefined, 2)">
+                <input class="i_Button" type="button" value="-3" onclick="TeamA.minusPoint(undefined, 3)">
+                
+            </span>
 
-        
+            <span class="tBoard teamB">
+
+                <input class="i_Button" type="button" value="+1" onclick="TeamB.addPoint(0, 1)">
+                <input class="i_Button" type="button" value="+2" onclick="TeamB.addPoint(0, 2)">
+                <input class="i_Button" type="button" value="+3" onclick="TeamB.addPoint(0, 3)">
+                <input class="i_Button" type="button" value="-1" onclick="TeamB.minusPoint(undefined, 1)">
+                <input class="i_Button" type="button" value="-2" onclick="TeamB.minusPoint(undefined, 2)">
+                <input class="i_Button" type="button" value="-3" onclick="TeamB.minusPoint(undefined, 3)">
+
+            </span>
+        </div>
 
         <!-- End -->
         
