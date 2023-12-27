@@ -53,32 +53,43 @@
             <div class="wrapper">
                 <div class="HOME">
                     
-                    <label for="hName">HOME- Name<img src="./pencil.png" alt="modify" onclick="TeamA.m_tName(undefined)"></label>
-                    <p class="hName">Team A</p>
-                    <label for="hPoint">HOME- Point<img src="./pencil.png" alt="modify" onclick="TeamA.m_tPoint(undefined)"></label>
-                    <p class="hPoint">0</p>
-                    <input class="i_Button" type="button" value="+1" onclick="TeamA.addPoint(0, 1)">
-                    <input class="i_Button" type="button" value="+2" onclick="TeamA.addPoint(0, 2)">
-                    <input class="i_Button" type="button" value="+3" onclick="TeamA.addPoint(0, 3)">
-                    <input class="i_Button" type="button" value="-1" onclick="TeamA.minusPoint(undefined, 1)">
-                    <input class="i_Button" type="button" value="-2" onclick="TeamA.minusPoint(undefined, 2)">
-                    <input class="i_Button" type="button" value="-3" onclick="TeamA.minusPoint(undefined, 3)">
+                    <div class="Team-Name child">
+                        <label for="hName">HOME- Name<img src="./pencil.png" alt="modify" onclick="TeamA.m_tName(undefined)"></label>
+                        <p class="hName">Team A</p>
+                    </div>
+                    <div class="Team-Point child">
+                        <label for="hPoint">HOME- Point<img src="./pencil.png" alt="modify" onclick="TeamA.m_tPoint(undefined)"></label>
+                        <p class="hPoint">0</p>
+                    </div>
+                    <div class="Operator child">
+                        <input class="i_Button" type="button" value="+1" onclick="TeamA.addPoint(0, 1)">
+                        <input class="i_Button" type="button" value="+2" onclick="TeamA.addPoint(0, 2)">
+                        <input class="i_Button" type="button" value="+3" onclick="TeamA.addPoint(0, 3)">
+                        <input class="i_Button" type="button" value="-1" onclick="TeamA.minusPoint(undefined, 1)">
+                        <input class="i_Button" type="button" value="-2" onclick="TeamA.minusPoint(undefined, 2)">
+                        <input class="i_Button" type="button" value="-3" onclick="TeamA.minusPoint(undefined, 3)">
+                    </div>
                     
                 </div>
                 <hr class="scoreboard-hr">
                 <div class="AWAY">
                     
-                    <label for="aName">AWAY- Name<img src="./pencil.png" alt="modify" onclick="TeamB.m_tName(undefined)"></label>
-                    <p class="aName">Team B</p>
-                    <label for="aPoint">AWAY- Point<img src="./pencil.png" alt="modify" onclick="TeamB.m_tPoint(undefined)"></label>
-                    <p class="aPoint">0</p>
-                    <input class="i_Button teamB" type="button" value="+1" onclick="TeamB.addPoint(0, 1)">
-                    <input class="i_Button teamB" type="button" value="+2" onclick="TeamB.addPoint(0, 2)">
-                    <input class="i_Button teamB" type="button" value="+3" onclick="TeamB.addPoint(0, 3)">
-                    <input class="i_Button teamB" type="button" value="-1" onclick="TeamB.minusPoint(undefined, 1)">
-                    <input class="i_Button teamB" type="button" value="-2" onclick="TeamB.minusPoint(undefined, 2)">
-                    <input class="i_Button teamB" type="button" value="-3" onclick="TeamB.minusPoint(undefined, 3)">
-
+                    <div class="Team-Name child">
+                        <label for="aName">AWAY- Name<img src="./pencil.png" alt="modify" onclick="TeamB.m_tName(undefined)"></label>
+                        <p class="aName">Team B</p>
+                    </div>
+                    <div class="Team-Point child">
+                        <label for="aPoint">AWAY- Point<img src="./pencil.png" alt="modify" onclick="TeamB.m_tPoint(undefined)"></label>
+                        <p class="aPoint">0</p>
+                    </div>
+                    <div class="operator child">
+                        <input class="i_Button teamB" type="button" value="+1" onclick="TeamB.addPoint(0, 1)">
+                        <input class="i_Button teamB" type="button" value="+2" onclick="TeamB.addPoint(0, 2)">
+                        <input class="i_Button teamB" type="button" value="+3" onclick="TeamB.addPoint(0, 3)">
+                        <input class="i_Button teamB" type="button" value="-1" onclick="TeamB.minusPoint(undefined, 1)">
+                        <input class="i_Button teamB" type="button" value="-2" onclick="TeamB.minusPoint(undefined, 2)">
+                        <input class="i_Button teamB" type="button" value="-3" onclick="TeamB.minusPoint(undefined, 3)">
+                    </div>
                 </div>
             </div>
         </article>
